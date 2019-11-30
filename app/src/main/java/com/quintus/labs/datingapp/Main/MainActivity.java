@@ -2,6 +2,7 @@ package com.quintus.labs.datingapp.Main;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -24,9 +25,16 @@ import com.quintus.labs.datingapp.R;
 import com.quintus.labs.datingapp.Utils.PulsatorLayout;
 import com.quintus.labs.datingapp.Utils.TopNavigationViewHelper;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import org.web3j.protocol.exceptions.TransactionException;
+
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+
 import java.util.ArrayList;
 import java.util.List;
-
 
 /**
  * DatingApp
@@ -46,6 +54,15 @@ public class MainActivity extends Activity {
     private NotificationHelper mNotificationHelper;
     private Cards cards_data[];
     private PhotoAdapter arrayAdapter;
+
+    //Generate interactable contract
+    EthNetwork contract = new EthNetwork();
+
+    FileWriter fileWriter = new FileWriter();
+
+    private static final Logger log = LoggerFactory.getLogger(Application.class);
+
+    //CheckNetwork checkNetwork = new CheckNetwork();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -217,6 +234,7 @@ public class MainActivity extends Activity {
             Intent btnClick = new Intent(mContext, BtnLikeActivity.class);
             btnClick.putExtra("url", card_item.getProfileImageUrl());
             startActivity(btnClick);
+            contract.execute();
         }
     }
 
@@ -239,6 +257,4 @@ public class MainActivity extends Activity {
     public void onBackPressed() {
 
     }
-
-
 }

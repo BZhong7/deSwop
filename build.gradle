@@ -3,11 +3,13 @@
 buildscript {
     
     repositories {
+        mavenCentral()
         google()
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.1'
+        classpath 'org.web3j:core:4.2.0-android'
         
 
         // NOTE: Do not place your application dependencies here; they belong

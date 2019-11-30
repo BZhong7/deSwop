@@ -28,6 +28,7 @@ public class BtnLikeActivity extends AppCompatActivity {
     private Context mContext = BtnLikeActivity.this;
     private ImageView like;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
