@@ -28,11 +28,6 @@ import com.quintus.labs.datingapp.Utils.TopNavigationViewHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.web3j.protocol.exceptions.TransactionException;
-
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,7 +77,8 @@ public class MainActivity extends Activity {
 
 
         rowItems = new ArrayList<Cards>();
-        Cards cards = new Cards("1", "Swati Tripathy", 21, "https://im.idiva.com/author/2018/Jul/shivani_chhabra-_author_s_profile.jpg", "Simple and beautiful Girl", "Acting", 200);
+        Cards cards = new Cards("1", "Addidas Sneaker", 21, "https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto:sensitive,fl_lossy/d285610e30664900b857a7fa00ed0201_9366/Superstar_Shoes_White_C77124_01_standard.jpg", "Simple and beautiful shoe", "Running", 200);
+        //Cards cards = new Cards("1", "Swati Tripathy", 21, "https://im.idiva.com/author/2018/Jul/shivani_chhabra-_author_s_profile.jpg", "Simple and beautiful Girl", "Acting", 200);
         rowItems.add(cards);
         cards = new Cards("2", "Ananaya Pandy", 20, "https://i0.wp.com/profilepicturesdp.com/wp-content/uploads/2018/06/beautiful-indian-girl-image-for-profile-picture-8.jpg", "cool Minded Girl", "Dancing", 800);
         rowItems.add(cards);
