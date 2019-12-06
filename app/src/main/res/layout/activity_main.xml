@@ -48,13 +48,6 @@
                     app:rotation_degrees="15.5"
                     tools:context=".MyActivity" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
@@ -76,8 +69,10 @@
                         android:padding="10dp"
                         android:src="@drawable/ic_dislike" />
 
+
                     <ImageButton
                         android:id="@+id/commentbtn"
+                        style="@style/Widget.AppCompat.ImageButton"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_alignParentTop="true"
@@ -88,7 +83,6 @@
                         android:elevation="7dp"
                         android:padding="10dp"
                         android:src="@drawable/ic_comment" />
-
 
                     <ImageButton
                         android:id="@+id/likebtn"
@@ -105,6 +99,13 @@
 
 
                 </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
             </LinearLayout>
         </LinearLayout>

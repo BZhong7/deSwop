@@ -15,32 +15,32 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.quintus.labs.datingapp.R;
 import com.quintus.labs.datingapp.Utils.TopNavigationViewHelper;
 
-public class BtnCommentActivity extends AppCompatActivity {
-    private static final String TAG = "BtnCommentActivity";
+public class BtnChatActivity extends AppCompatActivity {
+    private static final String TAG = "BtnChatActivity";
     private static final int ACTIVITY_NUM = 1;
-    private Context mContext = BtnCommentActivity.this;
-    private ImageView comment;
+    private Context mContext = BtnChatActivity.this;
+    private ImageView chat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_btn_comment);
+        setContentView(R.layout.activity_btn_chat);
 
         setupTopNavigationView();
-        comment = findViewById(R.id.comment);
+        chat = findViewById(R.id.commentbtn);
 
         Intent intent = getIntent();
         String profileUrl = intent.getStringExtra("url");
 
         switch (profileUrl) {
             case "defaultFemale":
-                Glide.with(mContext).load(R.drawable.default_woman).into(comment);
+                Glide.with(mContext).load(R.drawable.default_woman).into(chat);
                 break;
             case "defaultMale":
-                Glide.with(mContext).load(R.drawable.default_man).into(comment);
+                Glide.with(mContext).load(R.drawable.default_man).into(chat);
                 break;
             default:
-                Glide.with(mContext).load(profileUrl).into(comment);
+                Glide.with(mContext).load(profileUrl).into(chat);
                 break;
         }
 
@@ -55,7 +55,7 @@ public class BtnCommentActivity extends AppCompatActivity {
                 }
 
 
-                Intent mainIntent = new Intent(BtnCommentActivity.this, MainActivity.class);
+                Intent mainIntent = new Intent(BtnChatActivity.this, MainActivity.class);
                 startActivity(mainIntent);
             }
         }).start();

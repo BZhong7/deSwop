@@ -1,5 +1,7 @@
 package com.quintus.labs.datingapp.Main;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 import android.app.Application;
 import android.os.AsyncTask;
 
@@ -21,9 +23,11 @@ public class EthNetwork extends AsyncTask<Void, Void, String> {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
-    private String nodeURL = "https://ropsten.infura.io/v3/4876cedb80be4b1494f888302a420403";
-    private String privateKey = "0x7d8f2e90995f42dc6d44beb3ac0c42a91db33e0a66c3040fb45baca9c460e3c6";
-    private String erc721Address = "0xf72DE30b93d5e02e0127A49479EF0b589a121199";
+    Dotenv dotenv = Dotenv.load();
+
+    private String nodeURL = dotenv.get("ROPSTEN_NODE");
+    private String privateKey = dotenv.get("ROPSTEN_PRIVATE_KEY");
+    private String erc721Address = dotenv.get("ERC721_ADDRESS");
     private String publicAccAddress = "0xF214f19Cbf969C6a5Fab6bB0762b94bb0d498f71";
 
 
