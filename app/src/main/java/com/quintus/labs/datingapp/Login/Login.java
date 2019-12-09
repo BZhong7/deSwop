@@ -26,13 +26,13 @@ public class Login extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
 
     private Context mContext;
-    private EditText mEmail, mPassword;
+    private EditText mUsername, mPassword;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        mEmail = findViewById(R.id.input_email);
+        mUsername = findViewById(R.id.input_username);
         mPassword = findViewById(R.id.input_password);
         mContext = Login.this;
 
@@ -57,10 +57,10 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d(TAG, "onClick: attempting to log in");
 
-                String email = mEmail.getText().toString();
+                String username = mUsername.getText().toString();
                 String password = mPassword.getText().toString();
 
-                if (isStringNull(email) || isStringNull(password)) {
+                if (isStringNull(username) || isStringNull(password)) {
                     Toast.makeText(mContext, "You must fill out all the fields", Toast.LENGTH_SHORT).show();
                 } else {
 

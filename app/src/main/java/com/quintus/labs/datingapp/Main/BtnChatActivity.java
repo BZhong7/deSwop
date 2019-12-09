@@ -16,7 +16,7 @@ import com.quintus.labs.datingapp.R;
 import com.quintus.labs.datingapp.Utils.TopNavigationViewHelper;
 
 public class BtnChatActivity extends AppCompatActivity {
-    private static final String TAG = "BtnChatActivity";
+/*    private static final String TAG = "BtnChatActivity";
     private static final int ACTIVITY_NUM = 1;
     private Context mContext = BtnChatActivity.this;
     private ImageView chat;
@@ -70,5 +70,5 @@ public class BtnChatActivity extends AppCompatActivity {
         Menu menu = tvEx.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
-    }
+    }*/
 }

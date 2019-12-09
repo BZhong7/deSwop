@@ -91,27 +91,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/edit_text_focused_bg"
-                        android:hint="entry your Email"
+                        android:hint="Enter Email"
                         android:inputType="textEmailAddress"
                         android:padding="15dp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
+                <TextView
+                    android:id="@+id/orText"
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="bottom">
-
-                    <EditText
-                        android:id="@+id/input_username"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/edit_text_focused_bg"
-                        android:hint="enter your username "
-                        android:inputType="textEmailAddress"
-                        android:padding="15dp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:text="---Or---" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -122,13 +111,12 @@
                     app:passwordToggleEnabled="true">
 
                     <EditText
-                        android:id="@+id/input_password"
+                        android:id="@+id/input_phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/edit_text_focused_bg"
-                        android:hint="enter your Password"
-                        android:inputType="textPassword"
-                        android:padding="15dp" />
+                        android:ems="10"
+                        android:hint="Enter Phone#"
+                        android:inputType="phone" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
