@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.quintus.labs.datingapp.Introduction.IntroductionMain;
 import com.quintus.labs.datingapp.Main.MainActivity;
 import com.quintus.labs.datingapp.R;
 import com.quintus.labs.datingapp.Utils.PulsatorLayout;
@@ -86,7 +87,7 @@ public class Profile_Activity extends AppCompatActivity {
                 alertDialog.setPositiveButton("Log Out", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(Profile_Activity.this, MainActivity.class);
+                        Intent intent = new Intent(Profile_Activity.this, IntroductionMain.class);
                         startActivity(intent);
                     }
                 });
@@ -94,7 +95,7 @@ public class Profile_Activity extends AppCompatActivity {
                 alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        // User cancelled dialog
+                        // User cancelled dialog. Nothing happens.
                     }
                 });
 
