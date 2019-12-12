@@ -72,10 +72,12 @@ public class RegisterBasicInfo extends AppCompatActivity {
                     Log.d("Location==>", longtitude + "   " + latitude);
 
 
-                    Intent intent = new Intent(RegisterBasicInfo.this, RegisterGender.class);
-                    User user = new User("", "", "", "", email, "", false, false, false, false, "", "", "", latitude, longtitude);
-                    intent.putExtra("password", password);
+                    Intent intent = new Intent(RegisterBasicInfo.this, VerifyCode.class);
+                    User user = new User("", "", "", phone, "", "", false, false, false, false, "", "", "", latitude, longtitude);
+                    //intent.putExtra("password", password);
                     intent.putExtra("classUser", user);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
                     startActivity(intent);
                 }
             }
@@ -85,7 +87,7 @@ public class RegisterBasicInfo extends AppCompatActivity {
     private boolean checkInputs(String email, String phone) {
         Log.d(TAG, "checkInputs: checking inputs for null values.");
         if (email.equals("") && phone.equals("")) {
-            Toast.makeText(mContext, "Email or Phone fields must be filed out.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "Email or Phone fields must be filled out.", Toast.LENGTH_SHORT).show();
             return false;
         }
 

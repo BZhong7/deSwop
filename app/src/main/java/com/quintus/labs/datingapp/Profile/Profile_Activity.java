@@ -1,18 +1,23 @@
 package com.quintus.labs.datingapp.Profile;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.quintus.labs.datingapp.Main.MainActivity;
 import com.quintus.labs.datingapp.R;
 import com.quintus.labs.datingapp.Utils.PulsatorLayout;
 import com.quintus.labs.datingapp.Utils.TopNavigationViewHelper;
@@ -50,7 +55,7 @@ public class Profile_Activity extends AppCompatActivity {
         name = findViewById(R.id.profile_name);
 
 
-        ImageButton edit_btn = findViewById(R.id.edit_profile);
+        Button edit_btn = findViewById(R.id.edit_profile);
         edit_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,12 +64,42 @@ public class Profile_Activity extends AppCompatActivity {
             }
         });
 
-        ImageButton settings = findViewById(R.id.settings);
+        Button settings = findViewById(R.id.settings);
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Profile_Activity.this, SettingsActivity.class);
+                Intent intent = new Intent(Profile_Activity.this, Location_Activity.class);
                 startActivity(intent);
+            }
+        });
+
+        Button check_feedback = findViewById(R.id.check_feedback);
+
+        Button btn_log_out = findViewById(R.id.btn_log_out);
+        btn_log_out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(mContext);
+                alertDialog.setTitle("Confirm Log Out");
+                alertDialog.setMessage("Are you sure you want to log out of your account?");
+
+                alertDialog.setPositiveButton("Log Out", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(Profile_Activity.this, MainActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
+                alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // User cancelled dialog
+                    }
+                });
+
+                alertDialog.create();
+                alertDialog.show();
             }
         });
     }
