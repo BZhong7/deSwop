@@ -75,6 +75,13 @@ public class Profile_Activity extends AppCompatActivity {
         });
 
         Button check_feedback = findViewById(R.id.check_feedback);
+        check_feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile_Activity.this, Activity_Select_Feedback.class);
+                startActivity(intent);
+            }
+        });
 
         Button btn_log_out = findViewById(R.id.btn_log_out);
         btn_log_out.setOnClickListener(new View.OnClickListener() {

@@ -43,7 +43,10 @@
         <activity android:name=".Main.MainActivity" />
         <activity android:name=".Login.RegisterUserInfo" />
         <activity android:name=".Login.VerifyCode" />
-        <activity android:name=".Profile.Location_Activity"></activity>
+        <activity android:name=".Profile.Location_Activity" />
+        <activity android:name=".Profile.Activity_Select_Feedback" />
+        <activity android:name=".Profile.Activity_Public_Feedback" />
+        <activity android:name=".Profile.Activity_Private_Feedback"></activity>
     </application>
 
 </manifest>
