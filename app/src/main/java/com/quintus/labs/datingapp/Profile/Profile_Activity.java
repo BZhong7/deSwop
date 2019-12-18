@@ -96,6 +96,7 @@ public class Profile_Activity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(Profile_Activity.this, IntroductionMain.class);
                         startActivity(intent);
+                        finish();
                     }
                 });
 

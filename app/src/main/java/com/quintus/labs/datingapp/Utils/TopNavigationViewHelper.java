@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.quintus.labs.datingapp.Main.Add_Item_Activity;
 import com.quintus.labs.datingapp.Main.MainActivity;
 import com.quintus.labs.datingapp.Matched.Matched_Activity;
 import com.quintus.labs.datingapp.Profile.Profile_Activity;
@@ -48,6 +49,12 @@ public class TopNavigationViewHelper {
                     case R.id.ic_matched:
                         Intent intent3 = new Intent(context, Matched_Activity.class);
                         context.startActivity(intent3);
+
+                        break;
+
+                    case R.id.ic_add_item:
+                        Intent intent4 = new Intent(context, Add_Item_Activity.class);
+                        context.startActivity(intent4);
 
                         break;
                 }

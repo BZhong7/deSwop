@@ -28,4 +28,11 @@
 
     </item>
 
+    <item
+        android:id="@+id/ic_add_item"
+        android:icon="@drawable/ic_add_item"
+        android:title="">
+
+    </item>
+
 </menu>
