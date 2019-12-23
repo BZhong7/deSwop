@@ -27,13 +27,13 @@ import java.util.List;
  * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
  */
 
-public class Matched_Activity extends AppCompatActivity {
+public class Example_Matched_Activity extends AppCompatActivity {
 
-    private static final String TAG = "Matched_Activity";
-    private static final int ACTIVITY_NUM = 2;
+    private static final String TAG = "Example_Matched_Activity";
+    //private static final int ACTIVITY_NUM = 2;
     List<Users> matchList = new ArrayList<>();
     List<User> copyList = new ArrayList<>();
-    private Context mContext = Matched_Activity.this;
+    private Context mContext = Example_Matched_Activity.this;
     private String userId, userSex, lookforSex;
     private double latitude = 37.349642;
     private double longtitude = -121.938987;
@@ -48,7 +48,7 @@ public class Matched_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matched);
 
-        setupTopNavigationView();
+        //setupTopNavigationView();
         searchFunc();
 
 
@@ -165,7 +165,7 @@ public class Matched_Activity extends AppCompatActivity {
          startActivity(intent);
      }
  */
-    private void setupTopNavigationView() {
+    /*private void setupTopNavigationView() {
         Log.d(TAG, "setupTopNavigationView: setting up TopNavigationView");
         BottomNavigationViewEx tvEx = findViewById(R.id.topNavViewBar);
         TopNavigationViewHelper.setupTopNavigationView(tvEx);
@@ -173,7 +173,7 @@ public class Matched_Activity extends AppCompatActivity {
         Menu menu = tvEx.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
-    }
+    }*/
 
 
 }

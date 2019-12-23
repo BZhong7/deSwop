@@ -13,7 +13,8 @@ import android.os.Build;
 import androidx.core.app.NotificationCompat;
 import android.util.Log;
 
-import com.quintus.labs.datingapp.Matched.Matched_Activity;
+import com.quintus.labs.datingapp.Chat.ChatActivity;
+import com.quintus.labs.datingapp.Matched.Example_Matched_Activity;
 import com.quintus.labs.datingapp.R;
 
 
@@ -62,7 +63,7 @@ public class NotificationHelper extends ContextWrapper {
     }
 
     public NotificationCompat.Builder getChannel1Notification(String title, String message) {
-        Intent intent = new Intent(this, Matched_Activity.class);
+        Intent intent = new Intent(this, ChatActivity.class);
         PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
         Log.d("notification", "we are in getChaneel1Notification function \n ");
 

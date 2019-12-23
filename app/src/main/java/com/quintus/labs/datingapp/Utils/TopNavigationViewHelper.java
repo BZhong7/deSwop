@@ -8,9 +8,9 @@ import android.util.Log;
 import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.quintus.labs.datingapp.Chat.ChatActivity;
 import com.quintus.labs.datingapp.Main.Add_Item_Activity;
 import com.quintus.labs.datingapp.Main.MainActivity;
-import com.quintus.labs.datingapp.Matched.Matched_Activity;
 import com.quintus.labs.datingapp.Profile.Profile_Activity;
 import com.quintus.labs.datingapp.R;
 
@@ -47,7 +47,7 @@ public class TopNavigationViewHelper {
                         break;
 
                     case R.id.ic_matched:
-                        Intent intent3 = new Intent(context, Matched_Activity.class);
+                        Intent intent3 = new Intent(context, ChatActivity.class);
                         context.startActivity(intent3);
 
                         break;
