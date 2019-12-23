@@ -15,9 +15,24 @@
         android:layout_margin="@dimen/_10dp">
 
         <TextView
+            android:id="@+id/user_wants_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="John Doe wants to trade:" />
+
+        <ImageView
+            android:id="@+id/image_swap_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_swap_horiz_black"/>
+
+        <TextView
             android:id="@+id/suggested_offer_text"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
             android:text="Suggested Offer Card" />
     </androidx.cardview.widget.CardView>
 </LinearLayout>

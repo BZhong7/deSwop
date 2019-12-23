@@ -127,15 +127,17 @@ public class MessageListAdapter extends RecyclerView.Adapter {
     }
 
     private class SuggestedOfferHolder extends RecyclerView.ViewHolder {
-        TextView messageText;
+        TextView suggestedOfferText, userWantsText;
 
         SuggestedOfferHolder(View itemView) {
             super(itemView);
 
-            messageText = (TextView) itemView.findViewById(R.id.suggested_offer_text);
+            userWantsText = (TextView) itemView.findViewById(R.id.user_wants_text);
+            suggestedOfferText = (TextView) itemView.findViewById(R.id.suggested_offer_text);
         }
         void bind(BaseMessage message) {
-            messageText.setText(message.getMessage());
+            userWantsText.setText(message.getSender() + " wants to trade:");
+            suggestedOfferText.setText(message.getMessage());
         }
     }
 }
