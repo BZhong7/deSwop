@@ -50,9 +50,6 @@ public class MainActivity extends Activity {
     private Cards cards_data[];
     private PhotoAdapter arrayAdapter;
 
-    //Generate interactable contract
-    EthNetwork contract = new EthNetwork();
-
     FileWriter fileWriter = new FileWriter();
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
@@ -230,7 +227,6 @@ public class MainActivity extends Activity {
             Intent btnClick = new Intent(mContext, BtnLikeActivity.class);
             btnClick.putExtra("url", card_item.getProfileImageUrl());
             startActivity(btnClick);
-            contract.execute();
         }
     }
 

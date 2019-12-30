@@ -42,6 +42,10 @@ public class EthNetwork extends AsyncTask<Void, Void, String> {
     private DefaultGasProvider gasProvider;
     private String accountAddress;
 
+    private String txHash;
+
+    private TransactionReceipt transactionReceipt;
+
 
     public EthNetwork() {
         web3 = Web3j.build(new HttpService(nodeURL));
@@ -53,18 +57,21 @@ public class EthNetwork extends AsyncTask<Void, Void, String> {
         exampleContract = ExampleToken.load(contractAddress, web3, creds, gasProvider);
     }
 
-    public String mintToken() throws Exception {
-        TransactionReceipt transactionReceipt = exampleContract.mintUniqueToken(accountAddress, "EXT").send();
-        String txHash = transactionReceipt.getTransactionHash();
-        return txHash;
+    public void mintToken() throws Exception {
+        transactionReceipt = exampleContract.mintUniqueToken(accountAddress, "EXT").send();
     }
 
     protected String doInBackground (Void... params) {
         try {
-            return mintToken();
+            mintToken();
         } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public String getTxHash() {
+        txHash = transactionReceipt.getTransactionHash();
+        return txHash;
     }
 }
