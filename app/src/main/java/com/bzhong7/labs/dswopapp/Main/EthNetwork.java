@@ -22,7 +22,7 @@ public class EthNetwork extends AsyncTask<Void, Void, String> {
 
     private String nodeURL = "infura url goes here";
     private String privateKey = "private key from wallet";
-    private String erc721Address = "address that generates tokens";
+    private String erc721Address = "address that generates NFT tokens";
     private String publicAccAddress = "0xF214f19Cbf969C6a5Fab6bB0762b94bb0d498f71";
 
 
