@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.quintus.labs.datingapp.Chat.ChatActivity;
 import com.quintus.labs.datingapp.Chat.SelectConvoActivity;
+import com.quintus.labs.datingapp.ItemList.ItemListActivity;
 import com.quintus.labs.datingapp.Main.Add_Item_Activity;
 import com.quintus.labs.datingapp.Main.MainActivity;
 import com.quintus.labs.datingapp.Profile.Profile_Activity;
@@ -56,6 +57,12 @@ public class TopNavigationViewHelper {
                     case R.id.ic_add_item:
                         Intent intent4 = new Intent(context, Add_Item_Activity.class);
                         context.startActivity(intent4);
+
+                        break;
+
+                    case R.id.ic_collections_black_24dp:
+                        Intent intent5 = new Intent(context, ItemListActivity.class);
+                        context.startActivity(intent5);
 
                         break;
                 }

@@ -45,15 +45,15 @@ public class ProfileCheckinMain extends AppCompatActivity {
 
         Intent intent = getIntent();
         String name = intent.getStringExtra("name");
-        String bio = intent.getStringExtra("bio");
-        String interest = intent.getStringExtra("interest");
+        String bio = intent.getStringExtra("description");
+        String category = intent.getStringExtra("category");
         int distance = intent.getIntExtra("distance", 1);
         String append = (distance == 1) ? "mile away" : "miles away";
 
         profileDistance.setText(distance + " " + append);
         profileName.setText(name);
         profileBio.setText(bio);
-        profileInterest.setText(interest);
+        profileInterest.setText(category);
 
         profileImageUrl = intent.getStringExtra("photo");
         switch (profileImageUrl) {
@@ -69,7 +69,7 @@ public class ProfileCheckinMain extends AppCompatActivity {
         }
     }
 
-
+/*
     public void DislikeBtn(View v) {
 
             Intent btnClick = new Intent(mContext, BtnDislikeActivity.class);
@@ -84,5 +84,5 @@ public class ProfileCheckinMain extends AppCompatActivity {
             startActivity(btnClick);
 
     }
-
+*/
 }

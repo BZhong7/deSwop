@@ -49,7 +49,9 @@
         <activity android:name=".Profile.Activity_Private_Feedback" />
         <activity android:name=".Main.Add_Item_Activity" />
         <activity android:name=".Chat.ChatActivity" />
-        <activity android:name=".Chat.SelectConvoActivity"></activity>
+        <activity android:name=".Chat.SelectConvoActivity" />
+        <activity android:name=".ItemList.ItemListActivity" />
+        <activity android:name=".ItemList.ItemInfoActivity"></activity>
     </application>
 
 </manifest>

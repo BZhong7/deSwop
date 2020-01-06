@@ -3,6 +3,8 @@ package com.quintus.labs.datingapp.Main;
 import android.content.Context;
 import android.content.Intent;
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,21 +45,20 @@ public class PhotoAdapter extends ArrayAdapter<Cards> {
         ImageView image = convertView.findViewById(R.id.image);
         ImageButton btnInfo = convertView.findViewById(R.id.checkInfoBeforeMatched);
 
-        name.setText(card_item.getName() + ", " + card_item.getAge());
         btnInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, ProfileCheckinMain.class);
-                intent.putExtra("name", card_item.getName() + ", " + card_item.getAge());
+                intent.putExtra("name", card_item.getName());
                 intent.putExtra("photo", card_item.getProfileImageUrl());
-                intent.putExtra("bio", card_item.getBio());
-                intent.putExtra("interest", card_item.getInterest());
+                intent.putExtra("description", card_item.getDescription());
+                intent.putExtra("category", card_item.getCategory());
                 intent.putExtra("distance", card_item.getDistance());
                 mContext.startActivity(intent);
             }
         });
 
-        name.setText(card_item.getName() + ", " + card_item.getAge());
+        name.setText(card_item.getName());
 
         switch (card_item.getProfileImageUrl()) {
             case "defaultFemale":

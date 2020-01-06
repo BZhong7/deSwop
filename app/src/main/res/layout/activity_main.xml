@@ -39,15 +39,14 @@
                 android:background="@drawable/rounded_corner_layout"
                 android:orientation="vertical">
 
-                <com.lorentzos.flingswipe.SwipeFlingAdapterView
+                <ListView
                     android:id="@+id/frame"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    app:rotation_degrees="15.5"
                     tools:context=".MyActivity" />
-
+<!--
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
@@ -99,7 +98,7 @@
 
 
                 </LinearLayout>
-
+-->
             </LinearLayout>
 
             <LinearLayout

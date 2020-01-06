@@ -38,12 +38,12 @@
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/logo" />
 
-                <com.quintus.labs.datingapp.customfonts.MyTextView_GreatVibes_Regular
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="40dp"
-                    android:text="Love Dating"
+                    android:layout_marginLeft="60dp"
+                    android:text="dSwop"
                     android:textColor="#ff0b00"
                     android:textSize="30dp" />
 

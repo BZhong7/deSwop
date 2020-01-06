@@ -29,7 +29,6 @@ public class IntroductionMain extends AppCompatActivity {
         setContentView(R.layout.activity_introduction_main);
 
         signupButton = findViewById(R.id.signup_button);
-
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

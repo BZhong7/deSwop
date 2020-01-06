@@ -11,18 +11,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/numberOfPagesLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="24dp"
-        android:text="1/5"
-        android:textColor="#747474"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,12 +35,12 @@
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/logo" />
 
-                <com.quintus.labs.datingapp.customfonts.MyTextView_GreatVibes_Regular
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="40dp"
-                    android:text="Love Dating"
+                    android:layout_marginLeft="60dp"
+                    android:text="dSwop"
                     android:textColor="#ff0b00"
                     android:textSize="30dp" />
 
@@ -74,7 +62,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="40dp"
                     android:layout_marginBottom="20dp"
-                    android:text="Hey, lets get started!!!"
+                    android:text="Hey, let's get started!!!"
                     android:textColor="#747474"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -142,7 +130,7 @@
                 android:layout_centerHorizontal="true"
                 android:onClick="onLoginClicked"
                 android:padding="15dp"
-                android:text="existing User? Please Login" />
+                android:text="Existing User? Please Login" />
 
         </RelativeLayout>
     </ScrollView>

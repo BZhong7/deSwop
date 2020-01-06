@@ -10,17 +10,15 @@ package com.quintus.labs.datingapp.Main;
 
 public class Cards {
     private String userId;
-    private String name, profileImageUrl, bio, interest;
-    private int age;
+    private String name, profileImageUrl, description, category;
     private int distance;
 
-    public Cards(String userId, String name, int age, String profileImageUrl, String bio, String interest, int distance) {
+    public Cards(String userId, String name, String profileImageUrl, String description, String category, int distance) {
         this.userId = userId;
         this.name = name;
-        this.age = age;
         this.profileImageUrl = profileImageUrl;
-        this.bio = bio;
-        this.interest = interest;
+        this.description = description;
+        this.category = category;
         this.distance = distance;
     }
 
@@ -32,24 +30,16 @@ public class Cards {
         return distance;
     }
 
-    public String getBio() {
-        return bio;
-    }
-
-    public String getInterest() {
-        return interest;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+    public String getDescription() {
+        return description;
     }
 
     public String getProfileImageUrl() {
         return profileImageUrl;
+    }
+
+    public String getCategory() {
+        return category;
     }
 
     public void setProfileImageUrl(String profileImageUrl) {
