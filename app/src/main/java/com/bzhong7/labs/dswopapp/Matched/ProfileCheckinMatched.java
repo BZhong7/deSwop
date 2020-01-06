@@ -17,12 +17,6 @@ import com.bzhong7.labs.dswopapp.R;
 import com.bzhong7.labs.dswopapp.Utils.CalculateAge;
 import com.bzhong7.labs.dswopapp.Utils.User;
 
-/**
- * DatingApp
- * https://github.com/quintuslabs/DatingApp
- * Created on 25-sept-2018.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
 
 public class ProfileCheckinMatched extends AppCompatActivity {
     private static final String TAG = "ProfileCheckinMatched";

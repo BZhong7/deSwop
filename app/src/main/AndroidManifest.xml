@@ -33,9 +33,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.bzhong7.labs.dswopapp.Login.Login" />
-        <activity android:name="com.bzhong7.labs.dswopapp.Profile.SettingsActivity" />
         <activity android:name="com.bzhong7.labs.dswopapp.Login.RegisterBasicInfo" />
-        <activity android:name="com.bzhong7.labs.dswopapp.Matched.Example_Matched_Activity" />
         <activity android:name="com.bzhong7.labs.dswopapp.Profile.Profile_Activity" />
         <activity android:name="com.bzhong7.labs.dswopapp.Main.ProfileCheckinMain" />
         <activity android:name="com.bzhong7.labs.dswopapp.Matched.ProfileCheckinMatched" />
