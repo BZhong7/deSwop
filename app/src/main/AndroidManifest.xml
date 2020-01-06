@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.quintus.labs.datingapp">
+    package="com.bzhong7.labs.dswopapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -25,33 +25,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Introduction.IntroductionMain">
+        <activity android:name="com.bzhong7.labs.dswopapp.Introduction.IntroductionMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login.Login" />
-        <activity android:name=".Profile.SettingsActivity" />
-        <activity android:name=".Login.RegisterBasicInfo" />
-        <activity android:name=".Matched.Example_Matched_Activity" />
-        <activity android:name=".Profile.Profile_Activity" />
-        <activity android:name=".Main.ProfileCheckinMain" />
-        <activity android:name=".Matched.ProfileCheckinMatched" />
-        <activity android:name=".Profile.EditProfileActivity" />
-        <activity android:name=".Main.MainActivity" />
-        <activity android:name=".Login.RegisterUserInfo" />
-        <activity android:name=".Login.VerifyCode" />
-        <activity android:name=".Profile.Location_Activity" />
-        <activity android:name=".Profile.Activity_Select_Feedback" />
-        <activity android:name=".Profile.Activity_Public_Feedback" />
-        <activity android:name=".Profile.Activity_Private_Feedback" />
-        <activity android:name=".Main.Add_Item_Activity" />
-        <activity android:name=".Chat.ChatActivity" />
-        <activity android:name=".Chat.SelectConvoActivity" />
-        <activity android:name=".ItemList.ItemListActivity" />
-        <activity android:name=".ItemList.ItemInfoActivity"></activity>
+        <activity android:name="com.bzhong7.labs.dswopapp.Login.Login" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Profile.SettingsActivity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Login.RegisterBasicInfo" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Matched.Example_Matched_Activity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Profile.Profile_Activity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Main.ProfileCheckinMain" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Matched.ProfileCheckinMatched" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Profile.EditProfileActivity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Main.MainActivity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Login.RegisterUserInfo" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Login.VerifyCode" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Profile.Location_Activity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Profile.Activity_Select_Feedback" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Profile.Activity_Public_Feedback" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Profile.Activity_Private_Feedback" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Main.Add_Item_Activity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Chat.ChatActivity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.Chat.SelectConvoActivity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.ItemList.ItemListActivity" />
+        <activity android:name="com.bzhong7.labs.dswopapp.ItemList.ItemInfoActivity"></activity>
     </application>
 
 </manifest>
